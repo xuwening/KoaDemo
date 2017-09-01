@@ -1,0 +1,25 @@
+{
+  "name": "KoaDemo",
+  "version": "1.0.0",
+  "description": "koa demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    // "start": "nodemon app.js --exec babel-node  --presets es2015,stage-2"
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuwening/KoaDemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuwening/KoaDemo/issues"
+  },
+  "homepage": "https://github.com/xuwening/KoaDemo#readme",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
