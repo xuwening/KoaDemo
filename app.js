@@ -7,7 +7,7 @@ const router = new Router()
 const koaBody = require('koa-body')
 const serve = require('koa-static')
 
-import Person from './login/login'
+import login from './login/login'
 import index from './router/index'
 
 
@@ -15,6 +15,8 @@ app.use(serve("./static"))
 app.use(koaBody())
 
 router.post('/', index)
+router.redirect('/login', '/index.html')
+router.redirect('/index', '/index.html')
 
 app.use(router.routes()).use(router.allowedMethods())
 
