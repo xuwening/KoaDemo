@@ -1,6 +1,25 @@
 <html>
+    <head>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    </head>
     <body>
-        <h1>hello world.</h1>
-        <h6>koa example</h6>
+        <div>
+            <input type="file" accept="image/*" capture="camera">
+            <br/>
+            <input type="file" accept="video/*" capture="camcorder">
+            <br/>
+            <input type="file" accept="audio/*" capture="microphone">
+            <br/>
+            <input type="file" accept="image/*" multiple>
+        </div>
+
+        <div id="output">
+
+        </div>
+
+        <script>
+            var eDiv = document.getElementById("output")
+            eDiv.innerHTML = `<h6>${window.devicePixelRatio}</h6>`
+        </script>
     </body>
 </html>
